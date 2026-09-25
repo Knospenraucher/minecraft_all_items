@@ -15,7 +15,7 @@ extrahiert), filtert die Einträge aus exclusions.txt heraus und erzeugt:
 
 Bei einem Versionswechsel einfach mit der neuen Version erneut ausführen:
 
-    python3 generator/generate_items.py --version 1.21.11
+    python3 generator/generate_items.py --version 26.4
 
 Nur Python-Standardbibliothek, keine zusätzlichen Pakete nötig.
 """
@@ -58,18 +58,18 @@ def load_exclusions(path: Path) -> list[str]:
     return patterns
 
 
-def pack_format_for(version: str) -> int:
-    """Sucht den Datapack-Format-Wert der angegebenen Version."""
+def pack_format_for(version: str) -> tuple[int, int]:
+    """Sucht das Datapack-Format (Haupt- und Nebenversion) der angegebenen Version."""
     versions = fetch_json(f"{MCMETA}/refs/heads/summary/versions/data.json")
     for v in versions:
         if v["id"] == version:
-            return int(v["data_pack_version"])
+            return int(v["data_pack_version"]), int(v.get("data_pack_version_minor", 0))
     sys.exit(f"Fehler: Version '{version}' ist in mcmeta nicht bekannt.")
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Erzeugt den Item-Pool für das All-Items-Datapack.")
-    parser.add_argument("--version", default="1.21.10", help="Minecraft-Version (Standard: 1.21.10)")
+    parser.add_argument("--version", default="26.3", help="Minecraft-Version (Standard: 26.3)")
     args = parser.parse_args()
     version = args.version
 
@@ -133,20 +133,21 @@ def main() -> None:
     ITEM_LIST_FILE.write_text("\n".join(list_lines) + "\n", encoding="utf-8")
 
     # --- pack.mcmeta ------------------------------------------------------
-    # Ab 1.21.9 (Format 82+) sind min_format/max_format Pflicht; pack_format
-    # bleibt für ältere Tools zusätzlich drin.
+    # Gleiches Format wie die pack.mcmeta des Vanilla-Spiels: min_format/max_format
+    # als [Haupt, Neben]; pack_format bleibt für ältere Tools zusätzlich drin.
+    major, minor = pack_format
     mcmeta = {
         "pack": {
             "description": PACK_DESCRIPTION,
-            "pack_format": pack_format,
-            "min_format": pack_format,
-            "max_format": pack_format,
+            "pack_format": major,
+            "min_format": [major, minor],
+            "max_format": [major, minor],
         }
     }
     PACK_MCMETA.write_text(json.dumps(mcmeta, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
     excluded = len(registry) - len(entries)
-    print(f"Fertig: {len(entries)} Items im Pool, {excluded} ausgeschlossen, pack_format {pack_format}.")
+    print(f"Fertig: {len(entries)} Items im Pool, {excluded} ausgeschlossen, pack_format {major}.{minor}.")
 
 
 if __name__ == "__main__":

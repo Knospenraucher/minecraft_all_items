@@ -1,5 +1,6 @@
-# Item-Pool für Minecraft 1.21.10 (1369 Items)
+# Item-Pool für Minecraft 26.3 (1534 Items)
 
+abandoned_camp_map	Karte des verlassenen Lagers
 acacia_boat	Akazienholzboot
 acacia_button	Akazienholzknopf
 acacia_chest_boat	Akazienholztruhenboot
@@ -96,6 +97,9 @@ black_candle	Schwarze Kerze
 black_carpet	Schwarzer Teppich
 black_concrete	Schwarzer Beton
 black_concrete_powder	Schwarzer Trockenbeton
+black_concrete_slab	Schwarze Betonstufe
+black_concrete_stairs	Schwarze Betontreppe
+black_cushion	Schwarzes Kissen
 black_dye	Schwarzer Farbstoff
 black_glazed_terracotta	Schwarze glasierte Keramik
 black_harness	Schwarzes Geschirr
@@ -104,6 +108,8 @@ black_stained_glass	Schwarzes Glas
 black_stained_glass_pane	Schwarze Glasscheibe
 black_terracotta	Schwarze Keramik
 black_wool	Schwarze Wolle
+black_wool_slab	Schwarze Wollstufe
+black_wool_stairs	Schwarze Wolltreppe
 blackstone	Schwarzstein
 blackstone_slab	Schwarzsteinstufe
 blackstone_stairs	Schwarzsteintreppe
@@ -119,6 +125,9 @@ blue_candle	Blaue Kerze
 blue_carpet	Blauer Teppich
 blue_concrete	Blauer Beton
 blue_concrete_powder	Blauer Trockenbeton
+blue_concrete_slab	Blaue Betonstufe
+blue_concrete_stairs	Blaue Betontreppe
+blue_cushion	Blaues Kissen
 blue_dye	Blauer Farbstoff
 blue_egg	Blaues Ei
 blue_glazed_terracotta	Blaue glasierte Keramik
@@ -130,6 +139,8 @@ blue_stained_glass	Blaues Glas
 blue_stained_glass_pane	Blaue Glasscheibe
 blue_terracotta	Blaue Keramik
 blue_wool	Blaue Wolle
+blue_wool_slab	Blaue Wollstufe
+blue_wool_stairs	Blaue Wolltreppe
 bolt_armor_trim_smithing_template	Schmiedevorlage
 bone	Knochen
 bone_block	Knochenblock
@@ -158,6 +169,9 @@ brown_candle	Braune Kerze
 brown_carpet	Brauner Teppich
 brown_concrete	Brauner Beton
 brown_concrete_powder	Brauner Trockenbeton
+brown_concrete_slab	Braune Betonstufe
+brown_concrete_stairs	Braune Betontreppe
+brown_cushion	Braunes Kissen
 brown_dye	Brauner Farbstoff
 brown_egg	Braunes Ei
 brown_glazed_terracotta	Braune glasierte Keramik
@@ -169,12 +183,18 @@ brown_stained_glass	Braunes Glas
 brown_stained_glass_pane	Braune Glasscheibe
 brown_terracotta	Braune Keramik
 brown_wool	Braune Wolle
+brown_wool_slab	Braune Wollstufe
+brown_wool_stairs	Braune Wolltreppe
 brush	Pinsel
 bubble_coral	Blasenkoralle
 bubble_coral_block	Blasenkorallenblock
 bubble_coral_fan	Blasenkorallenfächer
 bucket	Eimer
 bundle	Bündel
+buried_ancient_city_map	Antike-Stätte-Karte
+buried_mineshaft_map	Bergwerkkarte
+buried_treasure_map	Schatzkarte
+buried_trial_chambers_map	Prüfungskammern-Karte
 burn_pottery_sherd	Flammen-Töpferscherbe
 bush	Busch
 cactus	Kaktus
@@ -217,6 +237,7 @@ chest_minecart	Güterlore
 chicken	Rohes Hühnchen
 chipped_anvil	Angeschlagener Amboss
 chiseled_bookshelf	Gearbeitetes Bücherregal
+chiseled_cinnabar	Gemeißelter Zinnober
 chiseled_copper	Gemeißelter Kupferblock
 chiseled_deepslate	Gemeißelter Tiefenschiefer
 chiseled_nether_bricks	Gemeißelte Netherziegel
@@ -226,10 +247,19 @@ chiseled_red_sandstone	Gemeißelter roter Sandstein
 chiseled_resin_bricks	Gemeißelte Harzziegel
 chiseled_sandstone	Gemeißelter Sandstein
 chiseled_stone_bricks	Gemeißelte Steinziegel
+chiseled_sulfur	Gemeißelter Schwefel
 chiseled_tuff	Gemeißelter Tuffstein
 chiseled_tuff_bricks	Gemeißelte Tuffsteinziegel
 chorus_flower	Chorusblüte
 chorus_fruit	Chorusfrucht
+cinnabar	Zinnober
+cinnabar_brick_slab	Zinnoberziegelstufe
+cinnabar_brick_stairs	Zinnoberziegeltreppe
+cinnabar_brick_wall	Zinnoberziegelmauer
+cinnabar_bricks	Zinnoberziegel
+cinnabar_slab	Zinnoberstufe
+cinnabar_stairs	Zinnobertreppe
+cinnabar_wall	Zinnobermauer
 clay	Ton
 clay_ball	Tonklumpen
 clock	Uhr
@@ -280,10 +310,12 @@ copper_horse_armor	Kupferner Rossharnisch
 copper_ingot	Kupferbarren
 copper_lantern	Kupferlaterne
 copper_leggings	Kupferbeinschutz
+copper_nautilus_armor	Kupferner Nautiluspanzer
 copper_nugget	Kupferklumpen
 copper_ore	Kupfererz
 copper_pickaxe	Kupferspitzhacke
 copper_shovel	Kupferschaufel
+copper_spear	Kupferspeer
 copper_sword	Kupferschwert
 copper_torch	Kupferfackel
 copper_trapdoor	Kupferfalltür
@@ -331,6 +363,9 @@ cyan_candle	Türkise Kerze
 cyan_carpet	Türkiser Teppich
 cyan_concrete	Türkiser Beton
 cyan_concrete_powder	Türkiser Trockenbeton
+cyan_concrete_slab	Türkise Betonstufe
+cyan_concrete_stairs	Türkise Betontreppe
+cyan_cushion	Türkises Kissen
 cyan_dye	Türkiser Farbstoff
 cyan_glazed_terracotta	Türkise glasierte Keramik
 cyan_harness	Türkises Geschirr
@@ -339,6 +374,8 @@ cyan_stained_glass	Türkises Glas
 cyan_stained_glass_pane	Türkise Glasscheibe
 cyan_terracotta	Türkise Keramik
 cyan_wool	Türkise Wolle
+cyan_wool_slab	Türkise Wollstufe
+cyan_wool_stairs	Türkise Wolltreppe
 damaged_anvil	Beschädigter Amboss
 dandelion	Löwenzahn
 danger_pottery_sherd	Gefahren-Töpferscherbe
@@ -398,6 +435,8 @@ deepslate_tile_slab	Tiefenschieferfliesenstufe
 deepslate_tile_stairs	Tiefenschieferfliesentreppe
 deepslate_tile_wall	Tiefenschieferfliesenmauer
 deepslate_tiles	Tiefenschieferfliesen
+desert_pyramid_map	Wüstentempelkarte
+desert_village_map	Wüstendorfkarte
 detector_rail	Sensorschiene
 diamond	Diamant
 diamond_axe	Diamantaxt
@@ -408,9 +447,11 @@ diamond_helmet	Diamanthelm
 diamond_hoe	Diamanthacke
 diamond_horse_armor	Diamantener Rossharnisch
 diamond_leggings	Diamantbeinschutz
+diamond_nautilus_armor	Diamantener Nautiluspanzer
 diamond_ore	Diamanterz
 diamond_pickaxe	Diamantspitzhacke
 diamond_shovel	Diamantschaufel
+diamond_spear	Diamantspeer
 diamond_sword	Diamantschwert
 diorite	Diorit
 diorite_slab	Dioritstufe
@@ -514,12 +555,15 @@ golden_axe	Goldaxt
 golden_boots	Goldstiefel
 golden_carrot	Goldene Karotte
 golden_chestplate	Goldharnisch
+golden_dandelion	Goldener Löwenzahn
 golden_helmet	Goldhelm
 golden_hoe	Goldhacke
 golden_horse_armor	Goldener Rossharnisch
 golden_leggings	Goldbeinschutz
+golden_nautilus_armor	Goldener Nautiluspanzer
 golden_pickaxe	Goldspitzhacke
 golden_shovel	Goldschaufel
+golden_spear	Goldspeer
 golden_sword	Goldschwert
 granite	Granit
 granite_slab	Granitstufe
@@ -534,6 +578,9 @@ gray_candle	Graue Kerze
 gray_carpet	Grauer Teppich
 gray_concrete	Grauer Beton
 gray_concrete_powder	Grauer Trockenbeton
+gray_concrete_slab	Graue Betonstufe
+gray_concrete_stairs	Graue Betontreppe
+gray_cushion	Graues Kissen
 gray_dye	Grauer Farbstoff
 gray_glazed_terracotta	Graue glasierte Keramik
 gray_harness	Graues Geschirr
@@ -542,6 +589,8 @@ gray_stained_glass	Graues Glas
 gray_stained_glass_pane	Graue Glasscheibe
 gray_terracotta	Graue Keramik
 gray_wool	Graue Wolle
+gray_wool_slab	Graue Wollstufe
+gray_wool_stairs	Graue Wolltreppe
 green_banner	Grünes Banner
 green_bed	Grünes Bett
 green_bundle	Grünes Bündel
@@ -549,6 +598,9 @@ green_candle	Grüne Kerze
 green_carpet	Grüner Teppich
 green_concrete	Grüner Beton
 green_concrete_powder	Grüner Trockenbeton
+green_concrete_slab	Grüne Betonstufe
+green_concrete_stairs	Grüne Betontreppe
+green_cushion	Grünes Kissen
 green_dye	Grüner Farbstoff
 green_glazed_terracotta	Grüne glasierte Keramik
 green_harness	Grünes Geschirr
@@ -557,6 +609,8 @@ green_stained_glass	Grünes Glas
 green_stained_glass_pane	Grüne Glasscheibe
 green_terracotta	Grüne Keramik
 green_wool	Grüne Wolle
+green_wool_slab	Grüne Wollstufe
+green_wool_stairs	Grüne Wolltreppe
 grindstone	Schleifstein
 gunpowder	Schwarzpulver
 guster_banner_pattern	Bannervorlage
@@ -593,10 +647,12 @@ iron_hoe	Eisenhacke
 iron_horse_armor	Eiserner Rossharnisch
 iron_ingot	Eisenbarren
 iron_leggings	Eisenbeinschutz
+iron_nautilus_armor	Eiserner Nautiluspanzer
 iron_nugget	Eisenklumpen
 iron_ore	Eisenerz
 iron_pickaxe	Eisenspitzhacke
 iron_shovel	Eisenschaufel
+iron_spear	Eisenspeer
 iron_sword	Eisenschwert
 iron_trapdoor	Eisenfalltür
 item_frame	Rahmen
@@ -613,6 +669,7 @@ jungle_leaves	Tropenbaumlaub
 jungle_log	Tropenbaumstamm
 jungle_planks	Tropenholzbretter
 jungle_pressure_plate	Tropenholzdruckplatte
+jungle_pyramid_map	Dschungeltempelkarte
 jungle_sapling	Tropenbaumsetzling
 jungle_shelf	Tropenholzregal
 jungle_sign	Tropenholzschild
@@ -646,6 +703,9 @@ light_blue_candle	Hellblaue Kerze
 light_blue_carpet	Hellblauer Teppich
 light_blue_concrete	Hellblauer Beton
 light_blue_concrete_powder	Hellblauer Trockenbeton
+light_blue_concrete_slab	Hellblaue Betonstufe
+light_blue_concrete_stairs	Hellblaue Betontreppe
+light_blue_cushion	Hellblaues Kissen
 light_blue_dye	Hellblauer Farbstoff
 light_blue_glazed_terracotta	Hellblaue glasierte Keramik
 light_blue_harness	Hellblaues Geschirr
@@ -654,6 +714,8 @@ light_blue_stained_glass	Hellblaues Glas
 light_blue_stained_glass_pane	Hellblaue Glasscheibe
 light_blue_terracotta	Hellblaue Keramik
 light_blue_wool	Hellblaue Wolle
+light_blue_wool_slab	Hellblaue Wollstufe
+light_blue_wool_stairs	Hellblaue Wolltreppe
 light_gray_banner	Hellgraues Banner
 light_gray_bed	Hellgraues Bett
 light_gray_bundle	Hellgraues Bündel
@@ -661,6 +723,9 @@ light_gray_candle	Hellgraue Kerze
 light_gray_carpet	Hellgrauer Teppich
 light_gray_concrete	Hellgrauer Beton
 light_gray_concrete_powder	Hellgrauer Trockenbeton
+light_gray_concrete_slab	Hellgraue Betonstufe
+light_gray_concrete_stairs	Hellgraue Betontreppe
+light_gray_cushion	Hellgraues Kissen
 light_gray_dye	Hellgrauer Farbstoff
 light_gray_glazed_terracotta	Hellgraue glasierte Keramik
 light_gray_harness	Hellgraues Geschirr
@@ -669,6 +734,8 @@ light_gray_stained_glass	Hellgraues Glas
 light_gray_stained_glass_pane	Hellgraue Glasscheibe
 light_gray_terracotta	Hellgraue Keramik
 light_gray_wool	Hellgraue Wolle
+light_gray_wool_slab	Hellgraue Wollstufe
+light_gray_wool_stairs	Hellgraue Wolltreppe
 light_weighted_pressure_plate	Feinwägeplatte
 lightning_rod	Blitzableiter
 lilac	Flieder
@@ -681,6 +748,9 @@ lime_candle	Hellgrüne Kerze
 lime_carpet	Hellgrüner Teppich
 lime_concrete	Hellgrüner Beton
 lime_concrete_powder	Hellgrüner Trockenbeton
+lime_concrete_slab	Hellgrüne Betonstufe
+lime_concrete_stairs	Hellgrüne Betontreppe
+lime_cushion	Hellgrünes Kissen
 lime_dye	Hellgrüner Farbstoff
 lime_glazed_terracotta	Hellgrüne glasierte Keramik
 lime_harness	Hellgrünes Geschirr
@@ -689,6 +759,8 @@ lime_stained_glass	Hellgrünes Glas
 lime_stained_glass_pane	Hellgrüne Glasscheibe
 lime_terracotta	Hellgrüne Keramik
 lime_wool	Hellgrüne Wolle
+lime_wool_slab	Hellgrüne Wollstufe
+lime_wool_stairs	Hellgrüne Wolltreppe
 lingering_potion	Verweiltrank
 lodestone	Leitstein
 loom	Webstuhl
@@ -700,6 +772,9 @@ magenta_candle	Magenta Kerze
 magenta_carpet	Magenta Teppich
 magenta_concrete	Magenta Beton
 magenta_concrete_powder	Magenta Trockenbeton
+magenta_concrete_slab	Magenta Betonstufe
+magenta_concrete_stairs	Magenta Betontreppe
+magenta_cushion	Magenta Kissen
 magenta_dye	Magenta Farbstoff
 magenta_glazed_terracotta	Magenta glasierte Keramik
 magenta_harness	Magenta Geschirr
@@ -708,6 +783,8 @@ magenta_stained_glass	Magenta Glas
 magenta_stained_glass_pane	Magenta Glasscheibe
 magenta_terracotta	Magenta Keramik
 magenta_wool	Magenta Wolle
+magenta_wool_slab	Magenta Wollstufe
+magenta_wool_stairs	Magenta Wolltreppe
 magma_block	Magmablock
 magma_cream	Magmacreme
 mangrove_boat	Mangrovenholzboot
@@ -761,6 +838,7 @@ music_disc_11	Schallplatte
 music_disc_13	Schallplatte
 music_disc_5	Schallplatte
 music_disc_blocks	Schallplatte
+music_disc_bounce	Schallplatte
 music_disc_cat	Schallplatte
 music_disc_chirp	Schallplatte
 music_disc_creator	Schallplatte
@@ -800,11 +878,14 @@ netherite_boots	Netheritstiefel
 netherite_chestplate	Netheritharnisch
 netherite_helmet	Netherithelm
 netherite_hoe	Netherithacke
+netherite_horse_armor	Netheritener Rossharnisch
 netherite_ingot	Netheritbarren
 netherite_leggings	Netheritbeinschutz
+netherite_nautilus_armor	Netheritener Nautiluspanzer
 netherite_pickaxe	Netheritspitzhacke
 netherite_scrap	Netheritplatten
 netherite_shovel	Netheritschaufel
+netherite_spear	Netheritspeer
 netherite_sword	Netheritschwert
 netherite_upgrade_smithing_template	Schmiedevorlage
 netherrack	Netherrack
@@ -829,6 +910,7 @@ oak_trapdoor	Eichenholzfalltür
 oak_wood	Eichenholz
 observer	Beobachter
 obsidian	Obsidian
+ocean_monument_map	Ozeanmonumentkarte
 ochre_froglight	Ockernes Froschlicht
 ominous_bottle	Unheilvolle Flasche
 ominous_trial_key	Unheilvoller Prüfungsschlüssel
@@ -840,15 +922,21 @@ orange_candle	Orange Kerze
 orange_carpet	Oranger Teppich
 orange_concrete	Oranger Beton
 orange_concrete_powder	Oranger Trockenbeton
+orange_concrete_slab	Orange Betonstufe
+orange_concrete_stairs	Orange Betontreppe
+orange_cushion	Oranges Kissen
 orange_dye	Oranger Farbstoff
 orange_glazed_terracotta	Orange glasierte Keramik
 orange_harness	Oranges Geschirr
+orange_poplar_leaves	Oranges Pappellaub
 orange_shulker_box	Orange Shulker-Kiste
 orange_stained_glass	Oranges Glas
 orange_stained_glass_pane	Orange Glasscheibe
 orange_terracotta	Orange Keramik
 orange_tulip	Orange Tulpe
 orange_wool	Orange Wolle
+orange_wool_slab	Orange Wollstufe
+orange_wool_stairs	Orange Wolltreppe
 oxeye_daisy	Margerite
 oxidized_chiseled_copper	Oxidierter gemeißelter Kupferblock
 oxidized_copper	Oxidierter Kupferblock
@@ -902,6 +990,9 @@ pink_candle	Rosa Kerze
 pink_carpet	Rosa Teppich
 pink_concrete	Rosa Beton
 pink_concrete_powder	Rosa Trockenbeton
+pink_concrete_slab	Rosa Betonstufe
+pink_concrete_stairs	Rosa Betontreppe
+pink_cushion	Rosa Kissen
 pink_dye	Rosa Farbstoff
 pink_glazed_terracotta	Rosa glasierte Keramik
 pink_harness	Rosa Geschirr
@@ -912,9 +1003,12 @@ pink_stained_glass_pane	Rosa Glasscheibe
 pink_terracotta	Rosa Keramik
 pink_tulip	Rosa Tulpe
 pink_wool	Rosa Wolle
+pink_wool_slab	Rosa Wollstufe
+pink_wool_stairs	Rosa Wolltreppe
 piston	Kolben
 pitcher_plant	Kannenpflanze
 pitcher_pod	Kannenpflanzenkapsel
+plains_village_map	Ebenendorfkarte
 plenty_pottery_sherd	Reichtums-Töpferscherbe
 podzol	Podsol
 pointed_dripstone	Spitzer Tropfstein
@@ -933,6 +1027,10 @@ polished_blackstone_pressure_plate	Polierte Schwarzsteindruckplatte
 polished_blackstone_slab	Polierte Schwarzsteinstufe
 polished_blackstone_stairs	Polierte Schwarzsteintreppe
 polished_blackstone_wall	Polierte Schwarzsteinmauer
+polished_cinnabar	Polierter Zinnober
+polished_cinnabar_slab	Polierte Zinnoberstufe
+polished_cinnabar_stairs	Polierte Zinnobertreppe
+polished_cinnabar_wall	Polierte Zinnobermauer
 polished_deepslate	Polierter Tiefenschiefer
 polished_deepslate_slab	Polierte Tiefenschieferstufe
 polished_deepslate_stairs	Polierte Tiefenschiefertreppe
@@ -943,14 +1041,36 @@ polished_diorite_stairs	Polierte Diorittreppe
 polished_granite	Polierter Granit
 polished_granite_slab	Polierte Granitstufe
 polished_granite_stairs	Polierte Granittreppe
+polished_sulfur	Polierter Schwefel
+polished_sulfur_slab	Polierte Schwefelstufe
+polished_sulfur_stairs	Polierte Schwefeltreppe
+polished_sulfur_wall	Polierte Schwefelmauer
 polished_tuff	Polierter Tuffstein
 polished_tuff_slab	Polierte Tuffsteinstufe
 polished_tuff_stairs	Polierte Tuffsteintreppe
 polished_tuff_wall	Polierte Tuffsteinmauer
+poplar_boat	Pappelholzboot
+poplar_button	Pappelholzknopf
+poplar_chest_boat	Pappelholztruhenboot
+poplar_door	Pappelholztür
+poplar_fence	Pappelholzzaun
+poplar_fence_gate	Pappelholzzauntor
+poplar_hanging_sign	Pappelholzhängeschild
+poplar_log	Pappelstamm
+poplar_planks	Pappelholzbretter
+poplar_pressure_plate	Pappelholzdruckplatte
+poplar_sapling	Pappelsetzling
+poplar_shelf	Pappelholzregal
+poplar_sign	Pappelholzschild
+poplar_slab	Pappelholzstufe
+poplar_stairs	Pappelholztreppe
+poplar_trapdoor	Pappelholzfalltür
+poplar_wood	Pappelholz
 popped_chorus_fruit	Geplatzte Chorusfrucht
 poppy	Mohn
 porkchop	Rohes Schweinefleisch
 potato	Kartoffel
+potent_sulfur	Reaktiver Schwefel
 potion	Trank
 powder_snow_bucket	Pulverschneeeimer
 powered_rail	Antriebsschiene
@@ -976,6 +1096,9 @@ purple_candle	Violette Kerze
 purple_carpet	Violetter Teppich
 purple_concrete	Violetter Beton
 purple_concrete_powder	Violetter Trockenbeton
+purple_concrete_slab	Violette Betonstufe
+purple_concrete_stairs	Violette Betontreppe
+purple_cushion	Violettes Kissen
 purple_dye	Violetter Farbstoff
 purple_glazed_terracotta	Violette glasierte Keramik
 purple_harness	Violettes Geschirr
@@ -984,6 +1107,8 @@ purple_stained_glass	Violettes Glas
 purple_stained_glass_pane	Violette Glasscheibe
 purple_terracotta	Violette Keramik
 purple_wool	Violette Wolle
+purple_wool_slab	Violette Wollstufe
+purple_wool_stairs	Violette Wolltreppe
 purpur_block	Purpurblock
 purpur_pillar	Purpursäule
 purpur_slab	Purpurstufe
@@ -1014,6 +1139,9 @@ red_candle	Rote Kerze
 red_carpet	Roter Teppich
 red_concrete	Roter Beton
 red_concrete_powder	Roter Trockenbeton
+red_concrete_slab	Rote Betonstufe
+red_concrete_stairs	Rote Betontreppe
+red_cushion	Rotes Kissen
 red_dye	Roter Farbstoff
 red_glazed_terracotta	Rote glasierte Keramik
 red_harness	Rotes Geschirr
@@ -1023,17 +1151,21 @@ red_nether_brick_slab	Rote Netherziegelstufe
 red_nether_brick_stairs	Rote Netherziegeltreppe
 red_nether_brick_wall	Rote Netherziegelmauer
 red_nether_bricks	Rote Netherziegel
+red_poplar_leaves	Rotes Pappellaub
 red_sand	Roter Sand
 red_sandstone	Roter Sandstein
 red_sandstone_slab	Rote Sandsteinstufe
 red_sandstone_stairs	Rote Sandsteintreppe
 red_sandstone_wall	Rote Sandsteinmauer
+red_shrub	Roter Strauch
 red_shulker_box	Rote Shulker-Kiste
 red_stained_glass	Rotes Glas
 red_stained_glass_pane	Rote Glasscheibe
 red_terracotta	Rote Keramik
 red_tulip	Rote Tulpe
 red_wool	Rote Wolle
+red_wool_slab	Rote Wollstufe
+red_wool_stairs	Rote Wolltreppe
 redstone	Redstone-Staub
 redstone_block	Redstone-Block
 redstone_lamp	Redstone-Lampe
@@ -1060,6 +1192,7 @@ sandstone	Sandstein
 sandstone_slab	Sandsteinstufe
 sandstone_stairs	Sandsteintreppe
 sandstone_wall	Sandsteinmauer
+savanna_village_map	Savannendorfkarte
 scaffolding	Gerüst
 scrape_pottery_sherd	Abschabe-Töpferscherbe
 sculk	Sculk
@@ -1074,6 +1207,7 @@ sentry_armor_trim_smithing_template	Schmiedevorlage
 shaper_armor_trim_smithing_template	Schmiedevorlage
 sheaf_pottery_sherd	Garben-Töpferscherbe
 shears	Schere
+shelf_mushroom	Baumpilz
 shelter_pottery_sherd	Zufluchts-Töpferscherbe
 shield	Schild
 short_dry_grass	Niedriges Trockengras
@@ -1109,6 +1243,7 @@ snout_armor_trim_smithing_template	Schmiedevorlage
 snow	Schnee
 snow_block	Schneeblock
 snowball	Schneeball
+snowy_village_map	Schneedorfkarte
 soul_campfire	Seelenlagerfeuer
 soul_lantern	Seelenlaterne
 soul_sand	Seelensand
@@ -1153,9 +1288,11 @@ stone_pickaxe	Steinspitzhacke
 stone_pressure_plate	Steindruckplatte
 stone_shovel	Steinschaufel
 stone_slab	Steinstufe
+stone_spear	Steinspeer
 stone_stairs	Steintreppe
 stone_sword	Steinschwert
 stonecutter	Steinsäge
+straw_bed	Strohbett
 string	Faden
 stripped_acacia_log	Entrindeter Akazienstamm
 stripped_acacia_wood	Entrindetes Akazienholz
@@ -1176,16 +1313,30 @@ stripped_oak_log	Entrindeter Eichenstamm
 stripped_oak_wood	Entrindetes Eichenholz
 stripped_pale_oak_log	Entrindeter Blasseichenstamm
 stripped_pale_oak_wood	Entrindetes Blasseichenholz
+stripped_poplar_log	Entrindeter Pappelstamm
+stripped_poplar_wood	Entrindetes Pappelholz
 stripped_spruce_log	Entrindeter Fichtenstamm
 stripped_spruce_wood	Entrindetes Fichtenholz
 stripped_warped_hyphae	Geschälte Wirrhyphen
 stripped_warped_stem	Geschälter Wirrstiel
 sugar	Zucker
 sugar_cane	Zuckerrohr
+sulfur	Schwefel
+sulfur_brick_slab	Schwefelziegelstufe
+sulfur_brick_stairs	Schwefelziegeltreppe
+sulfur_brick_wall	Schwefelziegelmauer
+sulfur_bricks	Schwefelziegel
+sulfur_cube_bucket	Schwefelwürfeleimer
+sulfur_slab	Schwefelstufe
+sulfur_spike	Schwefelspitze
+sulfur_stairs	Schwefeltreppe
+sulfur_wall	Schwefelmauer
 sunflower	Sonnenblume
 suspicious_stew	Seltsame Suppe
+swamp_hut_map	Sumpfhüttenkarte
 sweet_berries	Süßbeeren
 tadpole_bucket	Kaulquappeneimer
+taiga_village_map	Taigadorfkarte
 tall_dry_grass	Hohes Trockengras
 tall_grass	Hohes Gras
 target	Zielblock
@@ -1224,6 +1375,7 @@ verdant_froglight	Junggrünes Froschlicht
 vex_armor_trim_smithing_template	Schmiedevorlage
 vine	Ranken
 ward_armor_trim_smithing_template	Schmiedevorlage
+warm_ocean_ruins_map	Warmer-Ozean-Ruinenkarte
 warped_button	Wirrknopf
 warped_door	Wirrtür
 warped_fence	Wirrzaun
@@ -1331,6 +1483,9 @@ white_candle	Weiße Kerze
 white_carpet	Weißer Teppich
 white_concrete	Weißer Beton
 white_concrete_powder	Weißer Trockenbeton
+white_concrete_slab	Weiße Betonstufe
+white_concrete_stairs	Weiße Betontreppe
+white_cushion	Weißes Kissen
 white_dye	Weißer Farbstoff
 white_glazed_terracotta	Weiße glasierte Keramik
 white_harness	Weißes Geschirr
@@ -1340,6 +1495,8 @@ white_stained_glass_pane	Weiße Glasscheibe
 white_terracotta	Weiße Keramik
 white_tulip	Weiße Tulpe
 white_wool	Weiße Wolle
+white_wool_slab	Weiße Wollstufe
+white_wool_stairs	Weiße Wolltreppe
 wild_armor_trim_smithing_template	Schmiedevorlage
 wildflowers	Wildblumen
 wind_charge	Windkugel
@@ -1350,7 +1507,9 @@ wooden_axe	Holzaxt
 wooden_hoe	Holzhacke
 wooden_pickaxe	Holzspitzhacke
 wooden_shovel	Holzschaufel
+wooden_spear	Holzspeer
 wooden_sword	Holzschwert
+woodland_mansion_map	Waldanwesenkarte
 writable_book	Buch und Feder
 written_book	Beschriebenes Buch
 yellow_banner	Gelbes Banner
@@ -1360,12 +1519,18 @@ yellow_candle	Gelbe Kerze
 yellow_carpet	Gelber Teppich
 yellow_concrete	Gelber Beton
 yellow_concrete_powder	Gelber Trockenbeton
+yellow_concrete_slab	Gelbe Betonstufe
+yellow_concrete_stairs	Gelbe Betontreppe
+yellow_cushion	Gelbes Kissen
 yellow_dye	Gelber Farbstoff
 yellow_glazed_terracotta	Gelbe glasierte Keramik
 yellow_harness	Gelbes Geschirr
+yellow_poplar_leaves	Gelbes Pappellaub
 yellow_shulker_box	Gelbe Shulker-Kiste
 yellow_stained_glass	Gelbes Glas
 yellow_stained_glass_pane	Gelbe Glasscheibe
 yellow_terracotta	Gelbe Keramik
 yellow_wool	Gelbe Wolle
+yellow_wool_slab	Gelbe Wollstufe
+yellow_wool_stairs	Gelbe Wolltreppe
 zombie_head	Zombiekopf

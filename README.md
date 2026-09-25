@@ -1,13 +1,13 @@
 # All Items – Minecraft-Datapack
 
-Ein Datapack für **Minecraft Java Edition 1.21.10**, mit dem ihr gemeinsam versucht, **jedes Item im Spiel** zu sammeln.
+Ein Datapack für **Minecraft Java Edition 26.3**, mit dem ihr gemeinsam versucht, **jedes Item im Spiel** zu sammeln.
 
 ## Spielidee
 
-- Beim Start bekommt ihr ein zufälliges Ziel-Item.
+- Die Challenge **startet automatisch**, sobald das Datapack in der Welt geladen ist. Ihr bekommt direkt ein zufälliges Ziel-Item.
 - Sobald **einer von euch** das Item im Inventar hat, gilt es für alle als gesammelt. Dann gibt es sofort das nächste zufällige Ziel, ebenfalls für alle gleich.
 - Kein Item kommt doppelt vor. Das Spiel endet, wenn alle Items gesammelt sind.
-- Die Bossbar oben zeigt das aktuelle Ziel und den Fortschritt, z. B. **„Sammle: Diamant – 42/1369“**.
+- Die Bossbar oben zeigt das aktuelle Ziel und den Fortschritt, z. B. **„Item 43/1534: Diamant“**. Beim Betreten der Welt steht das aktuelle Ziel außerdem im Chat.
 - Bei jedem Fund gibt es einen Titel, einen Sound und eine Chatnachricht mit dem Namen des Finders.
 
 Der Fortschritt steht in der Command Storage der Welt (`allitems:game`). Nach einem Neustart des Servers oder der Welt geht also nichts verloren.
@@ -18,18 +18,24 @@ Der Fortschritt steht in der Command Storage der Welt (`allitems:game`). Nach ei
 2. **Neue Welt:** Beim Erstellen der Welt auf **„Datenpakete“** klicken und die ZIP-Datei in das Fenster ziehen.
    **Bestehende Welt:** Die ZIP-Datei in den Ordner `.minecraft/saves/<Weltname>/datapacks/` kopieren (auf einem Server: `<Weltordner>/datapacks/`).
 3. Die Welt öffnen bzw. auf einem laufenden Server `/reload` eingeben.
-4. Im Chat erscheint **„[All Items] Datapack geladen.“**. Mit `/datapack list` seht ihr, ob `file/All_Items.zip` aktiv ist.
-
-> Die Befehle brauchen Operator-Rechte. Im Einzelspieler bzw. beim Spielen im LAN müssen **Cheats aktiviert** sein.
+4. Die Challenge startet sofort: Oben erscheint die Bossbar mit dem ersten Ziel. Mit `/datapack list` seht ihr, ob `file/All_Items.zip` aktiv ist.
 
 ## Befehle
 
+Diese Befehle funktionieren für alle Spieler, **auch ohne Cheats**:
+
 | Befehl | Wirkung |
 |---|---|
-| `/function allitems:start` | Startet eine neue Runde und zieht das erste Ziel-Item. |
-| `/function allitems:skip` | Überspringt das aktuelle Item. Es kommt nicht wieder und das Gesamtziel sinkt um 1. |
-| `/function allitems:status` | Zeigt das aktuelle Ziel, die Zahl der gesammelten, übersprungenen und offenen Items. |
-| `/function allitems:reset` | Löscht den gesamten Fortschritt. Danach mit `start` neu beginnen. |
+| `/trigger allitems.skip` | Überspringt das aktuelle Item, z. B. wenn es nicht erhältlich ist. Im Chat kommt eine Rückfrage, erst ein Klick auf **[Ja]** überspringt wirklich. Das Item kommt nicht wieder und das Gesamtziel sinkt um 1. |
+| `/trigger allitems.status` | Zeigt das aktuelle Ziel und die Zahl der gesammelten, übersprungenen und offenen Items. |
+
+Nur für OPs bzw. mit aktivierten Cheats:
+
+| Befehl | Wirkung |
+|---|---|
+| `/function allitems:reset` | Löscht den gesamten Fortschritt und startet sofort eine neue Runde. |
+| `/function allitems:skip` | Überspringt ohne Rückfrage. |
+| `/function allitems:status` | Wie `/trigger allitems.status`. |
 
 ## Regeln im Detail
 
@@ -37,12 +43,12 @@ Der Fortschritt steht in der Command Storage der Welt (`allitems:game`). Nach ei
 - **Wie oft wird geprüft?** Alle 10 Ticks (zweimal pro Sekunde), nicht in jedem Tick.
 - **Wer zählt?** Nur Spieler im Überlebens- oder Abenteuermodus. Kreativ und Zuschauer zählen nicht, damit man nicht aus Versehen schummelt.
 - **Das Item wird nicht weggenommen.** Ihr dürft es behalten und weiterverwenden.
-- **Überspringen:** Übersprungene Items zählen nicht als gesammelt. Die Anzeige `42/1369` verringert sich beim Überspringen auf `42/1368`.
+- **Überspringen:** Übersprungene Items zählen nicht als gesammelt. Aus `Item 43/1534` wird beim Überspringen `Item 43/1533`.
 - **Tränke, verzauberte Bücher usw.:** Jede Item-Art kommt einmal vor. Für „Trank“ reicht also irgendein Trank, für „Verzaubertes Buch“ irgendein verzaubertes Buch.
 
 ## Item-Liste und Ausschlüsse
 
-Die Item-Liste wird **nicht von Hand gepflegt**, sondern per Python-Skript aus den offiziellen Spieldaten erzeugt. Für 1.21.10 sind es **1369 Items** (von 1488 insgesamt). Die komplette Liste mit deutschen Namen steht in [`generator/item_list.txt`](generator/item_list.txt).
+Die Item-Liste wird **nicht von Hand gepflegt**, sondern per Python-Skript aus den offiziellen Spieldaten erzeugt. Für 26.3 sind es **1534 Items** (von 1658 insgesamt). Die komplette Liste mit deutschen Namen steht in [`generator/item_list.txt`](generator/item_list.txt).
 
 Ausgeschlossen sind alle Items, die man im Survival nicht bekommen kann: Bedrock, Befehlsblöcke, Barriere, Konstruktionsblöcke, Verbundblock, Lichtblock, Debug-Stab, Spawn-Eier, Buch des Wissens, versteinerte Eichenholzstufe, Amethystknospenblock, verstärkter Tiefenschiefer, Spielerkopf und einige weitere. Die Ausschlussliste liegt in [`generator/exclusions.txt`](generator/exclusions.txt), mit einem Eintrag pro Zeile und Platzhaltern wie `*_spawn_egg`.
 
@@ -53,7 +59,7 @@ Drin bleiben schwierige, aber mögliche Items wie Drachenei, Mob-Köpfe, Verzaub
 Ihr braucht Python 3 und eine Internetverbindung. Zusätzliche Pakete sind nicht nötig.
 
 ```bash
-python3 generator/generate_items.py --version 1.21.10   # Item-Pool + pack.mcmeta neu erzeugen
+python3 generator/generate_items.py --version 26.3      # Item-Pool + pack.mcmeta neu erzeugen
 python3 tools/build.py                                  # prüfen und dist/All_Items.zip bauen
 ```
 
@@ -67,9 +73,9 @@ Neue Items einer neuen Version kommen so automatisch dazu. Hat sich an den Befeh
 
 ## Prüfung ohne Minecraft
 
-`python3 tools/validate.py` prüft das Datapack gegen die echten Spieldaten von 1.21.10:
+`python3 tools/validate.py` prüft das Datapack gegen die echten Spieldaten von 26.3:
 
-- alle JSON-Dateien und `pack.mcmeta` auf Gültigkeit, inklusive des richtigen `pack_format` (88)
+- alle JSON-Dateien und `pack.mcmeta` auf Gültigkeit, inklusive des richtigen `pack_format` (121)
 - jede Befehlszeile gegen den offiziellen Befehlsbaum des Spiels
 - Text-Komponenten (Felder, Farben, Übersetzungsschlüssel, neues `click_event`/`hover_event`-Format)
 - Item-IDs, Sound-Namen, Inventar-Slots und aufgerufene Funktionen
@@ -81,15 +87,18 @@ Das ersetzt keinen Test im Spiel, fängt aber Tipp- und Syntaxfehler ab.
 
 ```
 datapack/                      Inhalt der ZIP-Datei
-├── pack.mcmeta                pack_format 88 (1.21.9 – 1.21.10)
+├── pack.mcmeta                pack_format 121 (Minecraft 26.3)
 └── data/
     ├── minecraft/tags/function/load.json   ruft allitems:load beim Laden auf
     └── allitems/function/
-        ├── start / reset / skip / status   die vier Befehle
-        ├── load                            Scoreboard, Bossbar, Schleife starten
+        ├── reset / skip / status           Befehle (skip/status auch per /trigger)
+        ├── load                            Scoreboard, Bossbar, Schleife, Autostart
         ├── loop                            alle 10 Ticks: Ziel-Item prüfen
         └── internal/                       interne Hilfsfunktionen
             ├── pool                        (generiert) füllt den Item-Pool
+            ├── new_game                    neue Runde aufsetzen (Autostart/reset)
+            ├── welcome, help               Begrüßung beim Betreten, klickbare Befehle
+            ├── trigger_*, skip_*           /trigger-Befehle mit Rückfrage beim Skip
             ├── next, roll, pick            Zufallsauswahl mit /random + Macros
             ├── check, collect              Erkennung per "execute if items"
             ├── bossbar, bossbar_name       Anzeige
@@ -122,4 +131,4 @@ Mit `/data get storage allitems:game collected` könnt ihr euch z. B. alle bishe
 
 ## Deinstallieren
 
-`/function allitems:reset` ausführen, dann `/bossbar remove allitems:target` und `/scoreboard objectives remove allitems`. Zum Schluss die ZIP-Datei aus dem `datapacks`-Ordner löschen.
+Die ZIP-Datei aus dem `datapacks`-Ordner löschen und `/reload` eingeben. Danach `/bossbar remove allitems:target` und `/scoreboard objectives remove allitems` sowie `allitems.skip`, `allitems.status` und `allitems.left` entfernen. Fertig.

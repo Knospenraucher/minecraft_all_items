@@ -19,6 +19,15 @@
 # Scoreboard nur für Zwischenrechnungen (echter Spielstand liegt in der Storage)
 scoreboard objectives add allitems dummy
 
+# Trigger: funktionieren für ALLE Spieler, auch ohne Cheats/OP
+#   /trigger allitems.skip    -> aktuelles Item überspringen (mit Rückfrage)
+#   /trigger allitems.status  -> Spielstand anzeigen
+scoreboard objectives add allitems.skip trigger
+scoreboard objectives add allitems.status trigger
+
+# Zählt, wie oft ein Spieler das Spiel verlassen hat -> Begrüßung beim Wiederkommen
+scoreboard objectives add allitems.left minecraft.custom:minecraft.leave_game
+
 # Bossbar anlegen (schlägt still fehl, falls sie schon existiert)
 bossbar add allitems:target ""
 bossbar set allitems:target style progress
@@ -26,7 +35,8 @@ bossbar set allitems:target style progress
 # Prüf-Schleife starten: läuft alle 10 Ticks statt jeden Tick
 schedule function allitems:loop 10t replace
 
+# Autostart: gibt es noch kein Spiel, beginnt die Challenge sofort
+execute unless data storage allitems:game total run function allitems:internal/new_game
+
 # Bossbar nach dem Laden wieder auf den aktuellen Stand bringen
 execute if data storage allitems:game {running:1b} run function allitems:internal/bossbar
-
-tellraw @a ["",{"text":"[All Items] ","color":"gold"},{"text":"Datapack geladen. ","color":"gray"},{"text":"/function allitems:start","color":"yellow","click_event":{"action":"suggest_command","command":"/function allitems:start"}}]

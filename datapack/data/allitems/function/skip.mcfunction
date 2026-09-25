@@ -2,7 +2,8 @@
 #  All Items – skip
 #  Überspringt das aktuelle Ziel-Item. Es wird als "übersprungen"
 #  gezählt, kommt nicht wieder und verringert das Gesamtziel um 1.
-#  Aufruf: /function allitems:skip
+#  Spieler ohne OP nutzen: /trigger allitems.skip
+#  OPs können auch direkt: /function allitems:skip
 # =====================================================================
 
 execute unless data storage allitems:game {running:1b} run return run tellraw @a ["",{"text":"[All Items] ","color":"gold"},{"text":"Es läuft gerade kein Spiel.","color":"red"}]

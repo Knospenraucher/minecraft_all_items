@@ -11,7 +11,7 @@ Datapack so gut es geht gegen die offiziellen Vanilla-Daten (misode/mcmeta):
   * Text-Komponenten sind gültiges JSON mit bekannten Feldern und Farben
   * aufgerufene Funktionen existieren, Items/Sounds/Slots sind gültig
 
-Aufruf:  python3 tools/validate.py [--version 1.21.10]
+Aufruf:  python3 tools/validate.py [--version 26.3]
 Rückgabe: Exit-Code 0 = alles ok, 1 = Fehler gefunden.
 """
 
@@ -34,8 +34,8 @@ MACRO_SAMPLES = {
     "name": "item.minecraft.diamond",
     "max": "41",
     "index": "7",
-    "collected": "3",
-    "goal": "1369",
+    "current": "4",
+    "goal": "1534",
 }
 
 TEXT_KEYS = {
@@ -313,7 +313,7 @@ class Context:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--version", default="1.21.10")
+    parser.add_argument("--version", default="26.3")
     version = parser.parse_args().version
 
     errors: list[str] = []
@@ -337,10 +337,12 @@ def main() -> int:
     # pack_format prüfen
     mcmeta = json.loads((DATAPACK / "pack.mcmeta").read_text(encoding="utf-8"))["pack"]
     versions = fetch_json(f"{MCMETA}/refs/heads/summary/versions/data.json")
-    expected = next(v["data_pack_version"] for v in versions if v["id"] == version)
-    for key in ("pack_format", "min_format", "max_format"):
-        if mcmeta.get(key) != expected:
-            errors.append(f"pack.mcmeta: {key} ist {mcmeta.get(key)}, erwartet {expected}")
+    info = next(v for v in versions if v["id"] == version)
+    major, minor = info["data_pack_version"], info.get("data_pack_version_minor", 0)
+    expected = {"pack_format": major, "min_format": [major, minor], "max_format": [major, minor]}
+    for key, value in expected.items():
+        if mcmeta.get(key) != value:
+            errors.append(f"pack.mcmeta: {key} ist {mcmeta.get(key)}, erwartet {value}")
 
     # Alle vorhandenen Funktionen sammeln
     functions = set()
