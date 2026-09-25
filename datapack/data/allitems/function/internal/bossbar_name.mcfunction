@@ -1,5 +1,6 @@
 # =====================================================================
-#  internal/bossbar_name (Macro) – $(name), $(collected), $(goal)
+#  internal/bossbar_name (Macro) – $(name), $(current), $(goal)
+#  Anzeige z.B.: "Item 43/1369: Diamant"
 # =====================================================================
 
-$bossbar set allitems:target name ["",{"text":"Sammle: ","color":"gray"},{"translate":"$(name)","color":"yellow","bold":true},{"text":" – $(collected)/$(goal)","color":"gray"}]
+$bossbar set allitems:target name ["",{"text":"Item $(current)/$(goal): ","color":"white"},{"translate":"$(name)","color":"yellow","bold":true}]

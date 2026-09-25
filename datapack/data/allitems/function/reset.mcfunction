@@ -1,6 +1,6 @@
 # =====================================================================
-#  All Items – reset
-#  Löscht den kompletten Fortschritt. Danach mit start neu beginnen.
+#  All Items – reset (nur für OPs / mit Cheats)
+#  Löscht den kompletten Fortschritt und startet sofort eine neue Runde.
 #  Aufruf: /function allitems:reset
 # =====================================================================
 
@@ -13,9 +13,6 @@ data remove storage allitems:game collected
 data remove storage allitems:game skipped
 data remove storage allitems:game tmp
 
-# Bossbar ausblenden und zurücksetzen
-bossbar set allitems:target visible false
-bossbar set allitems:target name ""
-bossbar set allitems:target value 0
+tellraw @a ["",{"text":"[All Items] ","color":"gold"},{"text":"Fortschritt zurückgesetzt – neue Runde!","color":"gray"}]
 
-tellraw @a ["",{"text":"[All Items] ","color":"gold"},{"text":"Fortschritt zurückgesetzt. Neue Runde mit ","color":"gray"},{"text":"/function allitems:start","color":"yellow","click_event":{"action":"suggest_command","command":"/function allitems:start"}}]
+function allitems:internal/new_game

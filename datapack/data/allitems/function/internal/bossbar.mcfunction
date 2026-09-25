@@ -1,6 +1,6 @@
 # =====================================================================
 #  internal/bossbar – aktualisiert Text und Füllstand der Bossbar
-#  Anzeige: "Sammle: <Item> – <gesammelt>/<Gesamtziel>"
+#  Anzeige: "Item <Nummer>/<Gesamtziel>: <Item>"
 # =====================================================================
 
 function allitems:internal/count
@@ -11,7 +11,10 @@ execute store result bossbar allitems:target max run scoreboard players get #goa
 execute store result bossbar allitems:target value run scoreboard players get #collected allitems
 
 # Werte für das Macro zusammenstellen
-execute store result storage allitems:game tmp.collected int 1 run scoreboard players get #collected allitems
+# Nummer des aktuellen Items = gesammelt + 1
+scoreboard players operation #current allitems = #collected allitems
+scoreboard players add #current allitems 1
+execute store result storage allitems:game tmp.current int 1 run scoreboard players get #current allitems
 execute store result storage allitems:game tmp.goal int 1 run scoreboard players get #goal allitems
 data modify storage allitems:game tmp.name set from storage allitems:game target.name
 execute if data storage allitems:game target run function allitems:internal/bossbar_name with storage allitems:game tmp

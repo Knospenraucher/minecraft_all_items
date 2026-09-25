@@ -34,7 +34,7 @@ MACRO_SAMPLES = {
     "name": "item.minecraft.diamond",
     "max": "41",
     "index": "7",
-    "collected": "3",
+    "current": "4",
     "goal": "1369",
 }
 
