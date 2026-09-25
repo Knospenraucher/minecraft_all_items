@@ -1,0 +1,47 @@
+# =====================================================================
+#  All Items – Ausschlussliste
+# ---------------------------------------------------------------------
+#  Items in dieser Datei kommen NICHT in den Item-Pool.
+#  - Eine Zeile = ein Eintrag (ohne "minecraft:"-Präfix)
+#  - Platzhalter erlaubt: "*" (beliebig viele Zeichen), "?" (ein Zeichen)
+#  - Alles hinter "#" ist ein Kommentar
+#  Nach einer Änderung einfach "python3 generator/generate_items.py"
+#  erneut ausführen.
+# =====================================================================
+
+# --- Technisch / kein echtes Item ---
+air
+
+# --- Nur per Befehl / Creative erhältlich ---
+bedrock
+barrier
+light
+structure_block
+structure_void
+jigsaw
+debug_stick
+knowledge_book
+test_block
+test_instance_block
+*command_block          # command_block, chain_/repeating_command_block
+command_block_minecart
+*_spawn_egg             # alle Spawn Eggs
+petrified_oak_slab
+
+# --- Blöcke, die im Survival nicht als Item abbaubar sind ---
+budding_amethyst
+reinforced_deepslate
+end_portal_frame
+spawner
+trial_spawner
+vault
+infested_*              # befallene Steinblöcke (Silberfisch)
+suspicious_sand
+suspicious_gravel
+farmland
+dirt_path
+chorus_plant
+frogspawn
+
+# --- Im Vanilla-Survival nicht erhältlich ---
+player_head
